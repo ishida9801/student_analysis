@@ -39,13 +39,19 @@ Key assumptions include:
 
 ## Key Findings
 
-### Average Score by Subject
+### 1.Average Score by Grade and Subject
+
+![Average Score by Grade and Subject](images/average_score_by_grade.png)
+
+Grade 3 students showed relatively higher English scores compared with other grades.
+
+### 2.Average Score by Subject
 
 ![Average Score by Subject](images/average_score_by_subject.png)
 
 Science and Mathematics had the lowest average scores among the five subjects.
 
-### Attendance vs Average Score
+### 3.Attendance vs Average Score
 
 ![Attendance vs Average Score](images/attendance_vs_average.png)
 
