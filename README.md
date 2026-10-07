@@ -37,6 +37,20 @@ Key assumptions include:
 - pgAdmin
 - JupyterLab
 
+## Key Findings
+
+### Average Score by Subject
+
+![Average Score by Subject](images/average_score_by_subject.png)
+
+Science and Mathematics had the lowest average scores among the five subjects.
+
+### Attendance vs Average Score
+
+![Attendance vs Average Score](images/attendance_vs_average.png)
+
+Attendance showed a positive correlation with average score (r = 0.39).
+
 ## Analysis
 
 ### Python Analysis
