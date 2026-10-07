@@ -1,5 +1,5 @@
 -- ==========================================
--- Student Weak Subject Analysis
+-- Student Performance Analysis
 -- SQL Analysis
 -- Database: PostgreSQL
 -- ==========================================

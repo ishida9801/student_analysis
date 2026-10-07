@@ -1,4 +1,5 @@
-Student Academic Performance Analysis Report
+Student Performance Analysis Report
+
 1. Analysis Objective
 
 In preparatory schools and private tutoring schools, understanding students' learning progress and academic performance is important for providing appropriate educational support.
@@ -24,7 +25,7 @@ For each student, the dataset contains their grade, scores in five subjects, and
 Variables
 Variable	Description
 student_id	Student ID
-grade	Grade level (G1–G3)
+grade	Grade level (g1–g3)
 math	Mathematics score
 english	English score
 japanese	Japanese score
@@ -32,7 +33,7 @@ science	Science score
 social	Social Studies score
 attendance	Attendance rate (%)
 
-The test scores and attendance rates were generated using random values.
+The test scores and attendance rates were generated using random values based on predefined assumptions.
 
 Therefore, this fictional dataset cannot be used to determine causal relationships or general trends in real-world educational settings.
 
@@ -50,9 +51,9 @@ The number of students in each grade was calculated to examine the composition o
 
 Results
 Grade	Number of Students
-G1	96
-G2	104
-G3	100
+g1	96
+g2	104
+g3	100
 Total	300
 
 The number of students in each grade ranged from 96 to 104, indicating that there was no major imbalance in the number of students across grades.
@@ -66,12 +67,14 @@ Because the number of students in each grade was relatively balanced, the potent
 The average score for each subject was calculated by grade to compare academic performance across grades.
 
 Results
-Subject	G1	G2	G3
+Subject	g1	g2	g3
 Mathematics	52.10	50.20	53.90
 English	49.74	58.12	66.44
 Japanese	48.14	57.59	65.04
 Science	49.86	51.00	53.50
 Social Studies	54.26	55.45	62.65
+
+![Average Score by Grade and Subject](../images/average_score_by_grade.png)
 
 Average scores in English, Japanese, and Social Studies increased as grade level increased.
 
@@ -79,7 +82,7 @@ In contrast, the differences across grades were relatively small in Mathematics 
 
 Discussion
 
-The average scores for English and Japanese increased substantially from G1 to G3. English increased from 49.74 to 66.44, while Japanese increased from 48.14 to 65.04.
+The average scores for English and Japanese increased substantially from g1 to g3. English increased from 49.74 to 66.44, while Japanese increased from 48.14 to 65.04.
 
 On the other hand, Mathematics and Science showed relatively small changes across grades.
 
@@ -93,13 +96,13 @@ The average English score was compared across grades to examine differences in E
 
 Results
 Grade	Average English Score
-G1	49.74
-G2	58.12
-G3	66.44
+g1	49.74
+g2	58.12
+g3	66.44
 
 The average English score increased as grade level increased.
 
-The average score increased from 49.74 in G1 to 66.44 in G3, a difference of approximately 16.7 points.
+The average score increased from 49.74 in g1 to 66.44 in g3, a difference of approximately 16.7 points.
 
 Discussion
 
@@ -152,6 +155,8 @@ Rank	Subject	Average Score
 4	Social Studies	57.47
 5	English	58.21
 
+![Average Score by Subject](../images/average_score_by_subject.png)
+
 Science had the lowest average score at 51.47, followed by Mathematics at 52.04.
 
 English had the highest average score at 58.21.
@@ -174,6 +179,8 @@ Results
 
 The correlation between attendance rate and average score was 0.39.
 
+![Attendance vs Average Score](../images/attendance_vs_average.png)
+
 The scatter plot also showed an overall upward trend, indicating that students with higher attendance rates tended to have higher average scores.
 
 Discussion
@@ -194,19 +201,19 @@ Chapter 9 examined the overall relationship between attendance and average score
 
 Results
 Grade	Correlation between Attendance and Average Score
-G1	0.24
-G2	0.43
-G3	0.57
+g1	0.24
+g2	0.43
+g3	0.57
 
 A positive correlation was observed in all three grades.
 
-The correlation coefficient increased from 0.24 in G1 to 0.43 in G2 and 0.57 in G3. This indicates that the relationship between attendance and average score became stronger across the grades in this dataset.
+The correlation coefficient increased from 0.24 in g1 to 0.43 in g2 and 0.57 in g3. This indicates that the relationship between attendance and average score became stronger across the grades in this dataset.
 
 Discussion
 
-The relationship between attendance and average score was relatively weak in G1, while stronger positive correlations were observed in G2 and G3.
+The relationship between attendance and average score was relatively weak in g1, while stronger positive correlations were observed in g2 and g3.
 
-G3 showed the strongest correlation, with a coefficient of 0.57.
+g3 showed the strongest correlation, with a coefficient of 0.57.
 
 These results indicate that the strength of the relationship between attendance and academic performance differed by grade in this dataset.
 
@@ -218,13 +225,13 @@ Because the dataset is fictional, these results should not be interpreted as evi
 
 This analysis examined students' academic performance from three perspectives: grade level, subject performance, and attendance.
 
-The comparison of average scores by grade showed that English, Japanese, and Social Studies tended to have higher average scores at higher grade levels. In particular, the average English score increased from 49.74 in G1 to 66.44 in G3. In contrast, Mathematics and Science showed relatively small changes across grades. These results indicate that patterns of academic performance across grades differed depending on the subject.
+The comparison of average scores by grade showed that English, Japanese, and Social Studies tended to have higher average scores at higher grade levels. In particular, the average English score increased from 49.74 in g1 to 66.44 in g3. In contrast, Mathematics and Science showed relatively small changes across grades. These results indicate that patterns of academic performance across grades differed depending on the subject.
 
 The correlation analysis showed strong positive correlations between Mathematics and Science (0.89) and between English and Japanese (0.91). In contrast, very weak correlations were observed between the mathematics/science group and the English/Japanese group. This suggests that, within this dataset, performance tended to be more strongly associated between certain subject pairs.
 
 The subject-level analysis showed that Science had the lowest average score at 51.47, followed by Mathematics at 52.04, while English had the highest average score at 58.21. However, the differences between subjects were not particularly large, so Science and Mathematics should be interpreted as relatively lower-scoring subjects rather than clearly defined weak subjects.
 
-The analysis of attendance and academic performance showed a positive correlation of 0.39 between attendance rate and average score. When analyzed by grade, the correlation coefficients were 0.24 for G1, 0.43 for G2, and 0.57 for G3, showing a trend toward stronger correlations in higher grades.
+The analysis of attendance and academic performance showed a positive correlation of 0.39 between attendance rate and average score. When analyzed by grade, the correlation coefficients were 0.24 for g1, 0.43 for g2, and 0.57 for g3, showing a trend toward stronger correlations in higher grades.
 
 However, these correlations do not establish causal relationships. For example, higher attendance does not necessarily directly lead to higher academic performance. Other factors, such as study time and learning habits, may influence both attendance and academic performance.
 
@@ -236,7 +243,7 @@ This analysis used Python and pandas to analyze a fictional dataset of 300 stude
 
 The analysis showed that average scores in English, Japanese, and Social Studies tended to increase with grade level, while Mathematics and Science showed relatively smaller changes. Strong positive correlations were also observed between Mathematics and Science and between English and Japanese.
 
-In addition, attendance rate showed a positive correlation with average score, with the strongest correlation observed among G3 students.
+In addition, attendance rate showed a positive correlation with average score, with the strongest correlation observed among g3 students.
 
 However, because the dataset is fictional, these results cannot be used to determine causal relationships or general trends in real educational settings.
 
