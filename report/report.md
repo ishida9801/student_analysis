@@ -1,37 +1,39 @@
-Student Performance Analysis Report
+# Student Performance Analysis Report
 
-1. Analysis Objective
+## 1. Analysis Objective
 
 In preparatory schools and private tutoring schools, understanding students' learning progress and academic performance is important for providing appropriate educational support.
 
 In this report, I analyze a dataset of 300 fictional students using Python and pandas. The analysis focuses on the following areas:
 
-Average scores by subject
-Differences in academic performance by grade
-Differences in English scores across grades
-Correlations between subjects
-Relatively weaker subjects
-The relationship between attendance and average scores
-The relationship between attendance and average scores by grade
+- Average scores by subject
+- Differences in academic performance by grade
+- Differences in English scores across grades
+- Correlations between subjects
+- Relatively weaker subjects
+- The relationship between attendance and average scores
+- The relationship between attendance and average scores by grade
 
 Through these analyses, I practice fundamental data analysis techniques, including data aggregation, visualization, and correlation analysis using Python.
 
-2. Dataset
+## 2. Dataset
 
 A fictional dataset containing information on 300 students was generated using Python.
 
 For each student, the dataset contains their grade, scores in five subjects, and attendance rate.
 
-Variables
-Variable	Description
-student_id	Student ID
-grade	Grade level (g1–g3)
-math	Mathematics score
-english	English score
-japanese	Japanese score
-science	Science score
-social	Social Studies score
-attendance	Attendance rate (%)
+### Variables
+
+| Variable | Description |
+|---|---|
+| student_id | Student ID |
+| grade | Grade level (g1–g3) |
+| math | Mathematics score |
+| english | English score |
+| japanese | Japanese score |
+| science | Science score |
+| social | Social Studies score |
+| attendance | Attendance rate (%) |
 
 The test scores and attendance rates were generated using random values based on predefined assumptions.
 
@@ -39,40 +41,46 @@ Therefore, this fictional dataset cannot be used to determine causal relationshi
 
 However, it provides a useful dataset for practicing data analysis techniques such as aggregation, visualization, and correlation analysis.
 
-3. Analysis Environment
-Python
-pandas
-NumPy
-matplotlib
-JupyterLab
-4. Number of Students by Grade
+## 3. Analysis Environment
+
+- Python
+- pandas
+- NumPy
+- matplotlib
+- JupyterLab
+
+## 4. Number of Students by Grade
 
 The number of students in each grade was calculated to examine the composition of the dataset.
 
-Results
-Grade	Number of Students
-g1	96
-g2	104
-g3	100
-Total	300
+### Results
+
+| Grade | Number of Students |
+|---|---:|
+| g1 | 96 |
+| g2 | 104 |
+| g3 | 100 |
+| Total | 300 |
 
 The number of students in each grade ranged from 96 to 104, indicating that there was no major imbalance in the number of students across grades.
 
-Discussion
+### Discussion
 
 Because the number of students in each grade was relatively balanced, the potential impact of sample size imbalance on the subsequent grade-level analyses is considered to be relatively small.
 
-5. Average Score by Grade
+## 5. Average Score by Grade
 
 The average score for each subject was calculated by grade to compare academic performance across grades.
 
-Results
-Subject	g1	g2	g3
-Mathematics	52.10	50.20	53.90
-English	49.74	58.12	66.44
-Japanese	48.14	57.59	65.04
-Science	49.86	51.00	53.50
-Social Studies	54.26	55.45	62.65
+### Results
+
+| Subject | g1 | g2 | g3 |
+|---|---:|---:|---:|
+| Mathematics | 52.10 | 50.20 | 53.90 |
+| English | 49.74 | 58.12 | 66.44 |
+| Japanese | 48.14 | 57.59 | 65.04 |
+| Science | 49.86 | 51.00 | 53.50 |
+| Social Studies | 54.26 | 55.45 | 62.65 |
 
 ![Average Score by Grade and Subject](../images/average_score_by_grade.png)
 
@@ -80,7 +88,7 @@ Average scores in English, Japanese, and Social Studies increased as grade level
 
 In contrast, the differences across grades were relatively small in Mathematics and Science.
 
-Discussion
+### Discussion
 
 The average scores for English and Japanese increased substantially from g1 to g3. English increased from 49.74 to 66.44, while Japanese increased from 48.14 to 65.04.
 
@@ -90,21 +98,23 @@ These results indicate that the pattern of academic performance across grades di
 
 However, since the dataset is fictional, these differences cannot be interpreted as actual effects of grade level or differences in learning content.
 
-6. Differences in English Scores by Grade
+## 6. Differences in English Scores by Grade
 
 The average English score was compared across grades to examine differences in English performance by grade level.
 
-Results
-Grade	Average English Score
-g1	49.74
-g2	58.12
-g3	66.44
+### Results
+
+| Grade | Average English Score |
+|---|---:|
+| g1 | 49.74 |
+| g2 | 58.12 |
+| g3 | 66.44 |
 
 The average English score increased as grade level increased.
 
 The average score increased from 49.74 in g1 to 66.44 in g3, a difference of approximately 16.7 points.
 
-Discussion
+### Discussion
 
 In this dataset, the average English score showed an upward trend across grade levels.
 
@@ -112,24 +122,27 @@ However, differences in average scores alone do not indicate whether the differe
 
 In addition, because the dataset is fictional, the observed differences cannot be interpreted as representing actual differences in English performance across grade levels.
 
-7. Subject Relationships
+## 7. Subject Relationships
 
-The correlations between selected pairs of subjects were analyzed to examine relationships between students' performance in different subjects.
+The correlations between subjects were analyzed to examine relationships between students' performance in different subjects.
 
 The following two pairs were examined:
 
-Mathematics and Science
-English and Japanese
-Results
-Subject Pair	Correlation
-Mathematics × Science	0.89
-English × Japanese	0.91
+- Mathematics and Science
+- English and Japanese
+
+### Results
+
+| Subject Pair | Correlation |
+|---|---:|
+| Mathematics × Science | 0.89 |
+| English × Japanese | 0.91 |
 
 A strong positive correlation was observed between Mathematics and Science (0.89), as well as between English and Japanese (0.91).
 
 In contrast, the correlations between Mathematics and English (0.06), Mathematics and Japanese (0.08), Science and English (0.06), and Science and Japanese (0.06) were very weak.
 
-Discussion
+### Discussion
 
 Students with higher Mathematics scores tended to also have higher Science scores. Similarly, students with higher English scores tended to have higher Japanese scores.
 
@@ -143,17 +156,19 @@ However, correlation does not imply causation. For example, a high correlation b
 
 Furthermore, because the dataset is fictional, these relationships cannot necessarily be generalized to real students.
 
-8. Weak Subject Analysis
+## 8. Weak Subject Analysis
 
 The average score for each subject was calculated and sorted in ascending order to identify subjects with relatively lower average scores among the students.
 
-Results
-Rank	Subject	Average Score
-1	Science	51.47
-2	Mathematics	52.04
-3	Japanese	57.05
-4	Social Studies	57.47
-5	English	58.21
+### Results
+
+| Rank | Subject | Average Score |
+|---:|---|---:|
+| 1 | Science | 51.47 |
+| 2 | Mathematics | 52.04 |
+| 3 | Japanese | 57.05 |
+| 4 | Social Studies | 57.47 |
+| 5 | English | 58.21 |
 
 ![Average Score by Subject](../images/average_score_by_subject.png)
 
@@ -161,7 +176,7 @@ Science had the lowest average score at 51.47, followed by Mathematics at 52.04.
 
 English had the highest average score at 58.21.
 
-Discussion
+### Discussion
 
 In this dataset, Science and Mathematics had relatively lower average scores compared with the other subjects.
 
@@ -171,11 +186,11 @@ In a real educational setting, this type of analysis could be used to identify s
 
 Because the dataset is fictional, these results do not necessarily represent the strengths and weaknesses of actual students.
 
-9. Attendance and Academic Performance
+## 9. Attendance and Academic Performance
 
 The relationship between students' attendance rates and academic performance was analyzed by calculating each student's average score across the five subjects and examining its correlation with attendance.
 
-Results
+### Results
 
 The correlation between attendance rate and average score was 0.39.
 
@@ -183,7 +198,7 @@ The correlation between attendance rate and average score was 0.39.
 
 The scatter plot also showed an overall upward trend, indicating that students with higher attendance rates tended to have higher average scores.
 
-Discussion
+### Discussion
 
 A weak to moderate positive correlation was observed between attendance rate and average score.
 
@@ -195,21 +210,23 @@ Furthermore, correlation does not imply causation. The results do not demonstrat
 
 In a real educational dataset, other factors such as study time, learning habits, and previous academic performance would also need to be considered.
 
-10. Attendance and Academic Performance by Grade
+## 10. Attendance and Academic Performance by Grade
 
 Chapter 9 examined the overall relationship between attendance and average score. In this chapter, the correlation was calculated separately for each grade to determine whether the relationship differs by grade level.
 
-Results
-Grade	Correlation between Attendance and Average Score
-g1	0.24
-g2	0.43
-g3	0.57
+### Results
+
+| Grade | Correlation between Attendance and Average Score |
+|---|---:|
+| g1 | 0.24 |
+| g2 | 0.43 |
+| g3 | 0.57 |
 
 A positive correlation was observed in all three grades.
 
 The correlation coefficient increased from 0.24 in g1 to 0.43 in g2 and 0.57 in g3. This indicates that the relationship between attendance and average score became stronger across the grades in this dataset.
 
-Discussion
+### Discussion
 
 The relationship between attendance and average score was relatively weak in g1, while stronger positive correlations were observed in g2 and g3.
 
@@ -221,7 +238,7 @@ However, the differences in correlation coefficients do not demonstrate that the
 
 Because the dataset is fictional, these results should not be interpreted as evidence of a general relationship between attendance and academic performance in real educational settings.
 
-11. Discussion
+## 11. Discussion
 
 This analysis examined students' academic performance from three perspectives: grade level, subject performance, and attendance.
 
@@ -237,7 +254,7 @@ However, these correlations do not establish causal relationships. For example, 
 
 Finally, the dataset used in this analysis was artificially generated using Python. Therefore, the observed patterns cannot be directly generalized to actual students or educational settings. Using real-world educational data, incorporating additional variables, and applying statistical tests or time-series analysis could provide more reliable and practical insights.
 
-12. Conclusion
+## 12. Conclusion
 
 This analysis used Python and pandas to analyze a fictional dataset of 300 students, focusing on academic performance by grade, relationships between subjects, relatively weaker subjects, and the relationship between attendance and average scores.
 
